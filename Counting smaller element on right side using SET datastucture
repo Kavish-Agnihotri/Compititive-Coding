@@ -1,13 +1,16 @@
-void countSmallerRight(int A[], int len) 
+template<typename T>
+
+vector<T> countSmallerRight(vector<T> A, int len) 
 { 
-    set<int> s; 
-    int countSmaller[len]; 
-    for (int i = len - 1; i >= 0; i--) { 
+    set<T> s;
+    vector<T> countSmaller;
+    for (int i = len-1; i>=0; i--) { 
         s.insert(A[i]); 
         auto it = s.lower_bound(A[i]); 
-        countSmaller[i] = distance(s.begin(), it); 
+        countSmaller.push_back(distance(s.begin(), it)); 
     } 
+    
+    reverse(countSmaller.begin(),countSmaller.end());
   
-    for (int i = 0; i < len; i++) 
-        cout << countSmaller[i] << " "; 
+	return countSmaller;
 } 
