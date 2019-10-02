@@ -16,4 +16,38 @@
                         Desceding order - ListName.sort(mycompare);
                        
              
-        2.
+        2. Search
+        
+                Binary Search - 
+                
+                        int binary_search(start address,end address,key);
+                                return 1 = key found 
+                                return 0 = key not found
+                                
+                        int lower_bound(start address,end address,key)
+                                
+                                case 1: if key not exist in array/vector
+                                        Returns the pointer to position of next higher number then key . 
+                                        If key is greater the (n-1)th num then it returns n
+                                 
+                                 case 2: If key exist exactly ones 
+                                        Return the ptr to position of key 
+                                        in vector pos=return value-vector.begin()
+                                        
+                                 case 3: If key exist multiple times 
+                                        Returns the ptr to position of first occurence of key
+                                        
+                         int upper_bound(start address,end address,key)
+                                
+                                case 1: if key not exist in array/vector
+                                        Returns the position of next higher number then key . 
+                                        If key is greater the (n-1)th num then it returns n
+                                 
+                                 case 2: If key exist exactly ones 
+                                        Return the position of next higher number then key 
+                                        in vector pos=return value-vector.begin()
+              
+                                 case 3: If key exist multiple times 
+                                        Return pointer to first position of next higher number after last occurrence of num
+                                        
+         
