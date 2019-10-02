@@ -1,0 +1,19 @@
+#include<algorithms>
+
+        1.Sort (TC -  N*logN)
+        
+                For Array and Vector
+                
+                        Accending order - sort(vector.begin(),vector.end());
+                        Descending order - sort(vector.begin(),vector.end(),mycompare)
+                                           
+                                           bool mycompare(T a,T b)
+                                           {     return a>b;    }
+                        
+                For Linked List
+                        
+                        Accending order - ListName.sort();
+                        Desceding order - ListName.sort(mycompare);
+                       
+             
+        2.
