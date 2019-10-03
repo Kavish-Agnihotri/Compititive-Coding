@@ -9,11 +9,16 @@
                                            
                                            bool mycompare(T a,T b)
                                            {     return a>b;    }
+                                           
+                        Partial sort of array and Vector can be done using - 
+                                partial_sort(first pos iter, till pos sort,last pos 
                         
                 For Linked List
                         
                         Accending order - ListName.sort();
                         Desceding order - ListName.sort(mycompare);
+                        
+                
                        
              
         2. Search
@@ -50,4 +55,32 @@
                                  case 3: If key exist multiple times 
                                         Return pointer to first position of next higher number after last occurrence of num
                                         
+3. Non Manupulating Algorithms ( This algo will not make any change in actual vector or data structure )
+
+                I. sort(first pos iterator,last pos iterator)
+                II. reverse(first_iterator,last_iterator) - For Array , Vector     mylist.reverse() - For linked list
+                III.max_element(first_iterator,last_iterator) - For Array , vector 
+                        return the pointer to the maximum element of the array/Vector .
+                IV.min_element(first_iterator,last_iterator) 
+                        return the pointer to the minimum element of the array/vector .
+                V.accumulate(first_iterator,last_iterator,Initial Sum)  - for array and vector
+                        return the sum of elements added with Initial Sum 
+                VI.count(first_iterator,last_iterator,value)
+                        returns the number of times value stored in array / vector
+                VII. find(first_iterator,last_iterator,value)
+                        return the pointer to the location where element is found
+                        if element is not found in vector it points to vecotr.end() i.e. out of vector
+                        if element is not found in array it points to n'th location i.e. out of array
+                        
+4. Manupulative Algorithms ( This algo. will make some changes in array or vector )
+
+        I.vector.erase(position)  only works for vector. Delete element at pos 1 = vector.erase(vector.begin()+1);
+        II. vector.erase(position 1,position 2) - Delete from pos 1 to pos 2
+        III. vector.erase(unique(v.begin(),v.end(),v.end())  
+                This removes the duplicate element given that the vector is sorted . Here unique gives the distinct element
+                but does not resize the vector. resize is done by erase call .
+        IV. 
+                
+         
+         
          
