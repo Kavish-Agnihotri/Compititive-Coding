@@ -83,7 +83,32 @@
         III. vector.erase(unique(v.begin(),v.end(),v.end())  
                 This removes the duplicate element given that the vector is sorted . Here unique gives the distinct element
                 but does not resize the vector. resize is done by erase call .
-        IV. 
+        IV. next_permutation(first_iterator,last_iterator)  For finding n! permutation of vector or String .
+        V. Prev_permutation(first_iterator,last_iterator)  Can be used to print permutation in reverse .
+        vI . distance(first_iterator, Iterator to location) Can be used to find position of value while function return 
+                                                           pointer like in max_element,min_element,find.
+                                                           
+                                                           
+5. Some new function which can be used for Array , Vector and String
+
+        I. all_of(first_iterator,last_iterator,comparator)  This function check if every element in array is following some 
+                                                            condition like greater then 0 or not .
+                  Return True - If every element follow perticular functionality given in comparator
+                        else False
+                     comparator example - [](int a){ return a<0; }
+       
+        II. any_of(first_iterator,last_iterator,comparator)
+        III. none_of(firsr_iterator,last_iterator,comparator)
+        
+        IV. copy_n(first_iterator of ar1(array you want to copy), n (no. of element) , first_iterator of ar2(array to which
+                                                                                                            copy data
+           This function is used to copy data of one array to another array
+                                                                                                            
+        V. iota(first_iterator,last_iterator,starting value)
+            This function initializes the array from staring value in continues like 1,2,3,4,5,6 .
+            
+
+   
                 
          
          
