@@ -2,7 +2,11 @@
 
         1.Sort (TC -  N*logN)
         
-                For Array and Vector
+                For Array 
+                
+                        sort(arr,arr+n,mycompare);
+        
+                For Vector and String
                 
                         Accending order - sort(vector.begin(),vector.end());
                         Descending order - sort(vector.begin(),vector.end(),mycompare)
