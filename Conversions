@@ -1,0 +1,5 @@
+String to Integer -
+ 
+            int x= stoi("134");
+    
+ 
