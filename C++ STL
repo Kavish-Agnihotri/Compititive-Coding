@@ -71,10 +71,13 @@
                         return the sum of elements added with Initial Sum 
                 VI.count(first_iterator,last_iterator,value)
                         returns the number of times value stored in array / vector
-                VII. find(first_iterator,last_iterator,value)
+                VII. find(first_iterator,last_iterator,value)  Array or Vector
                         return the pointer to the location where element is found
                         if element is not found in vector it points to vecotr.end() i.e. out of vector
                         if element is not found in array it points to n'th location i.e. out of array
+                        
+                     mapname.find(value)  for Map 
+                        returns pointer to the pair of data
                         
 4. Manupulative Algorithms ( This algo. will make some changes in array or vector )
 
