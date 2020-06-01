@@ -1,0 +1,23 @@
+// Solved on Interviewbit
+
+vector<int> Solution::allFactors(int A) {
+    vector<int> solution;
+    
+    // Here Cofactor is the key point if a divides n then n/a also divides n 
+    for(int i=1;i<=sqrt(A);i++)
+    {
+        if(A%i==0)
+        {
+            solution.push_back(i);
+        }
+        
+    }
+    // To store in sorted order
+    for(int i=sqrt(A);i>=1;i--)
+    {
+        // In factor(4) 2 is stored twice 
+        if(A%i==0 && i!=sqrt(A))
+            solution.push_back(A/i);
+    }
+    return solution;
+}
